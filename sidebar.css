@@ -1,0 +1,105 @@
+/* it's harder to control a first-child then a last-child */
+
+.region--sidebar {
+	margin-top: 0;
+	margin-bottom: var(--majoris);
+
+	background: whitesmoke;
+	text-align: center;
+}
+
+@media screen and (max-width: 999px) {
+	.region--sidebar {
+		margin-top: var(--majoris); /* in mobile view, margin-top is needed to prevent touching */
+	}
+}
+
+/* ---------- */
+/* ---------- */
+/* ---------- */
+/* ---------- */
+/* ---------- */
+/* SIDEBAR BLOCKS */
+/* ---------- */
+/* ---------- */
+/* ---------- */
+/* ---------- */
+/* ---------- */
+
+.region--sidebar .block {
+    padding-right: var(--minoris);
+	padding-left: var(--minoris)
+}
+
+/* first-node image block */
+
+.region--sidebar .block:first-of-type:has(img) {
+	margin-bottom: 0; /* fix problem unique to webpages with a sidebar start image probably caused by drupal core */
+	padding: 0;
+	border-bottom: var(--majoris) solid #fff;
+}
+
+/* first sidebar textual block (main menu block) */
+
+#block-globalrs-tpryt-zd {
+	padding-top: var(--majoris);
+}
+
+/* last block */
+
+/*
+.region--sidebar .block:last-child {
+	padding-bottom: var(--majoris);
+}
+*/
+
+/* block titles */
+
+.region--sidebar .block__title {
+	margin-top: 0 !important;
+	
+	font-size: 2em;
+	line-height: 1.25em;
+}
+
+/* ---------- */
+/* ---------- */
+/* ---------- */
+/* ---------- */
+/* ---------- */
+/* SIDEBAR LINKS */
+/* ---------- */
+/* ---------- */
+/* ---------- */
+/* ---------- */
+/* ---------- */
+
+/* remove olivero sidelines for sidebar menu links */
+
+.menu--sidebar .menu__link--link {
+	max-width: max-content;
+	margin: 0 auto 0;
+}
+
+.menu--sidebar .menu__link::after {
+	display: none;
+}
+
+/* remove general spacing for sidebar menus which pushes menu links to the left */
+
+.menu--level-1 {
+	margin: 0 !important;
+}
+
+/* remove sidebar menus list style type */
+
+.region--sidebar .menu__item {
+	list-style-type: none;
+}
+
+/* view links in sidebar */
+
+.region--sidebar .views-field-title {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}

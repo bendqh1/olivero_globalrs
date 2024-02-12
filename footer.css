@@ -1,0 +1,31 @@
+.site-footer__inner {
+	padding: 0 !important; /* delete a huge gap --- core override */
+}
+
+.site-footer {
+	text-align: center;
+}
+
+.site-footer__inner {
+	justify-content: center !important;
+}
+
+.region--footer-bottom .block__title {
+	color: var(--actionColor);
+}
+
+.region--footer-bottom .block__content {
+	color: #fff;
+}
+
+.region--footer-bottom a:hover {
+	color: var(--primaryColor) !important;
+}
+
+/* dynamic year ender */
+
+.globalrs_dynamic_year {
+	min-height: var(--dynamicYear);
+	font-weight: bold;
+	color: #fff
+}
