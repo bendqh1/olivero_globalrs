@@ -7,6 +7,12 @@
 	--actionColor: darkorange;
 	--exceptionColor: yellow;
 
+	/* Black, Gray, White */
+
+	--blackColor: black;
+	--grayColor: whitesmoke;
+	--whiteColor: white;
+	
 	/* basic fonts */
 
 	--primaryFont: arial;
