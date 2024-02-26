@@ -1,6 +1,7 @@
 resources:
   js:
     behavior.js: {}
+    last_tick.js: {}
   css:
     theme:
       style.css: {}
