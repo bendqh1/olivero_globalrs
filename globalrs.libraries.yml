@@ -13,6 +13,7 @@ resources:
       middle_down.css: {}
       footer.css: {}
 
+      regions.css: {}
       nodes.css: {}
       blocks.css: {}
       views.css: {}
