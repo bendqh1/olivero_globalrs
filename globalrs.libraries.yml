@@ -4,8 +4,9 @@ resources:
     last_tick.js: {}
   css:
     theme:
-      style.css: {}
       root.css: {}
+      reset.css: {}
+      style.css: {}
 
       header.css: {}
       middle_up.css: {}
