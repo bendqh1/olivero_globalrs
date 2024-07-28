@@ -24,3 +24,7 @@ regions:
 ```
 
 * Note that you need to indent region-values with two whitespaces
+
+## Deleted files
+
+* I have deleted the `blocks.css` file because blocks should rely on the core theme's CSS or have in-place CSS with a structure-developing tool like Elementor. In rare cases a block's CSS could be put i `style.css`.
