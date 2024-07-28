@@ -1,7 +1,6 @@
 resources:
   js:
     behavior.js: {}
-    last_tick.js: {}
   css:
     theme:
       root.css: {}
@@ -9,17 +8,14 @@ resources:
       style.css: {}
 
       header.css: {}
-      middle_up.css: {}
-      sidebar.css: {}
-      middle_down.css: {}
+      middle.css: {}
       footer.css: {}
+
+      sidebar.css: {}
 
       regions.css: {}
       nodes.css: {}
-      blocks.css: {}
-      views.css: {}
 
-      custom_button.css: {}
       call_now_button.css: {}
 
       homepage.css: {}
