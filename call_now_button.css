@@ -1,59 +1,104 @@
-.cbwtphone_wrapper {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: fixed;
+.sticky_global {
+	display: block;
+
+	position: sticky; /* sticky prevents the popup from covering the dynamic year ender */
 	right: 0;
 	bottom: 0;
 	left: 0;
 	z-index: 2147483647;
-	max-height: var(--contactWidget);
-	height: var(--contactWidget);
+
+	padding-top: 5px;
+	padding-bottom: 5px;
+
 	text-decoration: none;
-	font-size: 120%;
 	font-weight: bold;
-	background: linear-gradient(-160deg,#2494db 0%,#0d7ab8 78.66%);
+
+	background: blue;
 }
 
-.cbwtphone_wrapper a {
-	color: #fff;
+.sticky_bar_heading_wrapper {
+	text-align: center;
+	border-bottom: 1px solid #fff;
 }
-.cbwtphone_wrapper a:hover {
-	color: #000 !important;
-}
-.cbwtphone_wrapper a:focus {
-	color: #fff !important;
-}
-.cbwtphone_wrapper a:active {
-	color: #fff !important;
-}
-.cbwtphone_wrapper a:visited {
+
+.sticky_bar_heading_box {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+
+	font-size: 24px;
 	color: #fff;
 }
 
-.whatsapp_link {
+.sticky_global_any_contact_box {
+	display: block;
+
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	text-align: center;
+}
+
+.voip_wrapper {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.voip_link {
 	display: inline-block;
-	height: var(--contactWidget);
-	max-height: var(--contactWidget);
 	transition: none !important;
 	box-shadow: none !important;
 	text-decoration: none !important;
+	color: #fff;
 }
 
-.whatsapp_link:hover {
-	text-decoration: none !important;
-}
-
-.whatsapp_icon {
+.voip_icon {
 	display: inline;
 	vertical-align: middle;
-	width: var(--contactWidget);
-	height: var(--contactWidget);
-	max-width: var(--contactWidget);
-	max-height: var(--contactWidget);
+
+	width: var(--minoris);
+	height: var(--minoris);
+	max-width: var(--minoris);
+	max-height: var(--minoris);
+
+	margin-right: 5px;
 }
 
-.whatsapp_text {
+.voip_text {
 	display: inline;
 	vertical-align: middle;
+}
+
+.globalrs_dynamic_year {
+	padding-bottom: var(--majoris);
+	font-weight: bold;
+	color: #fff;
+}
+
+@media screen and (min-width: 999px) {
+
+	.sticky_global_any_contact_box {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.voip_icon {
+		width: var(--majoris);
+		height: var(--majoris);
+		max-width: var(--majoris);
+		max-height: var(--majoris);
+	}
+
+	.voip_link {
+		height: var(--majoris);
+		max-height: var(--majoris);
+	}
+
+	.voip_link:hover {
+		color: #000;
+	}
+
 }
