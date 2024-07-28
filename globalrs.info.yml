@@ -7,22 +7,16 @@ libraries:
   - globalrs/resources
 
 regions:
-  header: 'Header'
+  header: Header
   primary_menu: 'Primary menu'
   secondary_menu: 'Secondary menu'
-  new_header: 'New Header'
-  first_hero: 'First Hero (full width)'
-  second_hero: 'Second Hero (full width)'
-  highlighted: 'Highlighted'
-  breadcrumb: 'Breadcrumb'
-  social: 'Social Bar'
-  content_above: 'Content Above'
-  content: 'Content'
+  hero: 'Hero (full width)'
+  highlighted: Highlighted
+  breadcrumb: Breadcrumb
+  social: Social Bar
+  content_above: Content Above
+  content: Content
   sidebar: 'Sidebar'
-  sidebar_first: 'Sidebar First'
-  sidebar_second: 'Sidebar Second'
-  content_below: 'Content Below'
-  third_hero: 'Third Hero (full width)'
-  fourth_hero: 'Fourth Hero (full width)'
-  footer_top: 'Footer Top'
+  content_below: 'Content Below (Flex Layout)'
+  footer_top: 'Footer Top (Flex Layout)'
   footer_bottom: 'Footer Bottom'
