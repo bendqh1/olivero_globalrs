@@ -5,14 +5,14 @@
 	--primaryColor: dodgerblue;
 	--secondaryColor: linen;
 	--actionColor: darkorange;
-	--exceptionColor: yellow;
+	--exceptionColor: lavender;
 
 	/* Black, Gray, White */
 
 	--blackColor: black;
-	--greyColor: whitesmoke;
+	--greyColor: #E8E8E8;
 	--whiteColor: white;
-	
+
 	/* basic fonts */
 
 	--primaryFont: arial;
@@ -24,10 +24,5 @@
 
 	--minoris: 25px;
 	--majoris: 50px;
-
-	/* contact widget and dynamic year ender spacing */
-
-	--contactWidget: 50px;
-	--dynamicYear: 100px;
 
 }
