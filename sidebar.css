@@ -1,78 +1,29 @@
 /* it's harder to control a first-child then a last-child */
 
 .region--sidebar {
-	margin-top: 0;
-	margin-bottom: var(--majoris);
-
-	background: whitesmoke;
+	padding: var(--majoris);
+	background: var(--greyColor);
 	text-align: center;
 }
 
 @media screen and (max-width: 999px) {
 	.region--sidebar {
-		margin-top: var(--majoris); /* in mobile view, margin-top is needed to prevent touching */
+		margin-top: var(--majoris); /* prevent touching the contact page comprised solely of blocks */
 	}
 }
-
-/* ---------- */
-/* ---------- */
-/* ---------- */
-/* ---------- */
-/* ---------- */
-/* SIDEBAR BLOCKS */
-/* ---------- */
-/* ---------- */
-/* ---------- */
-/* ---------- */
-/* ---------- */
-
-.region--sidebar .block {
-    padding-right: var(--minoris);
-	padding-left: var(--minoris)
-}
-
-/* first-node image block */
-
-.region--sidebar .block:first-of-type:has(img) {
-	margin-bottom: 0; /* fix problem unique to webpages with a sidebar start image probably caused by drupal core */
-	padding: 0;
-	border-bottom: var(--majoris) solid #fff;
-}
-
-/* first sidebar textual block (main menu block) */
-
-#block-globalrs-tpryt-zd {
-	padding-top: var(--majoris);
-}
-
-/* last block */
-
-/*
-.region--sidebar .block:last-child {
-	padding-bottom: var(--majoris);
-}
-*/
 
 /* block titles */
 
 .region--sidebar .block__title {
-	margin-top: 0 !important;
-	
 	font-size: 2em;
 	line-height: 1.25em;
 }
 
-/* ---------- */
-/* ---------- */
-/* ---------- */
-/* ---------- */
-/* ---------- */
-/* SIDEBAR LINKS */
-/* ---------- */
-/* ---------- */
-/* ---------- */
-/* ---------- */
-/* ---------- */
+/* remove sidebar menus list style type */
+
+.region--sidebar .menu__item {
+	list-style-type: none;
+}
 
 /* remove olivero sidelines for sidebar menu links */
 
@@ -91,15 +42,29 @@
 	margin: 0 !important;
 }
 
-/* remove sidebar menus list style type */
-
-.region--sidebar .menu__item {
-	list-style-type: none;
-}
-
 /* view links in sidebar */
 
 .region--sidebar .views-field-title {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+
+/* ---------- */
+/* ---------- */
+/* ---------- */
+/* ---------- */
+/* ---------- */
+/* SIDEBAR IMAGE BLOCK */
+/* ---------- */
+/* ---------- */
+/* ---------- */
+/* ---------- */
+/* ---------- */
+
+/* 
+I no longer put small topic images on the top of the sidebar unless I have two sidebar regions.
+	This way I prevent possible broad mistakes of gapping between the two parts of a single sidebar.
+		From now on, I will put images small topic images only in the content above region.
+			I will hide each small topic image in case a larger topic image is available in the same webpage.
+				This will also make my small topic images to appear on top of every page.
+*/
