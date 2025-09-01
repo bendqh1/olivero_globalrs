@@ -1,19 +1,18 @@
 # globalrs
 
-`globalrs` means "Global resources".
+**globalrs** means "global resources" and it is a basic starter sub-theme of a Drupal general core theme.
 
-Basic starter sub-theme of a Drupal general core theme.
+## Defining the sub-theme
 
-## YAML files and all other files
-
-In `/themes/globalrs` add the files available in this directory and edit accordingly.
-
-* **Both** install the sub theme and set it as default.
+In `/themes/globalrs` add the files available in this repository and edit accordingly and then Both install the sub-theme and set it as default.
 
 ## Create a sub theme
 
-Regions are not inherited by sub themes, you have to copy the regions from the parent to your theme's `globalrs.info.yml` file, or else the default system themes are used.<br>
-To do that, go to `/core/themes/THEME/THEME.info.yml` and copy the following into `/themes/globalrs/globalrs.info.yml`.
+Sub-themes do not necessarily include data that define regions, but we can copy these data from the parent directory and edit `globalrs.info.yml` as explained below.
+
+### 1)
+
+Go to `/core/themes/THEME/THEME.info.yml` and copy the following into `/themes/globalrs/globalrs.info.yml`.
 
 ```
 regions:
@@ -21,7 +20,9 @@ regions:
   ...
 ```
 
-Then, copy any relevant file from `/core/themes/THEME/templates/layout` to a corresponding directory root at `/themes/THEME/templates/layout`.
+### 2) 
+
+Copy any relevant file from `/core/themes/THEME/templates/layout` to the sub-theme directory `/themes/THEME/templates/layout`.
 
 ## Notes
 
