@@ -20,4 +20,6 @@ regions:
   ...
 ```
 
-* * YAML files can't contain tabulations, only whitespaces; we need to indent region-values with two whitespaces.
+Then, copy any relevant file from `/core/themes/THEME/templates/layout` to a corresponding directory root at `/themes/THEME/templates/layout`.
+
+* YAML files can't contain tabulations, only whitespaces; we need to indent region-values with two whitespaces.
