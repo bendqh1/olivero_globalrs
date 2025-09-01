@@ -4,8 +4,6 @@
 
 Basic starter sub-theme of a Drupal general core theme.
 
-In Drupal 10 the general core theme is Olivero but this project should probably help to sub-theme any future general core theme.
-
 ## YAML files and all other files
 
 In `/themes/globalrs` add the files available in this directory and edit accordingly.
@@ -24,11 +22,3 @@ regions:
 ```
 
 * Note that you need to indent region-values with two whitespaces
-
-## Deleted files
-
-* I have deleted the `blocks.css` file because blocks should rely on the core theme's CSS or have in-place CSS with a structure-developing tool like Elementor. In rare cases a block's CSS could be put i `style.css`.
-
-## Notes
-
-In Olivero we treat the Content Below region as part of the footer, hence "middle_down" margin-top will come from Content Below region.
